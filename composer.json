@@ -1,0 +1,27 @@
+{
+    "name": "domprojects/ci-country-list",
+    "description": "List of all countries with names and ISO 3166-1 codes for CodeIgniter",
+    "keywords": [],
+    "type": "library",
+    "homepage": "https://github.com/domProjects/ci-country-list",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emmanuel Campait",
+            "email": "support@domprojects.com",
+            "homepage": "https://domprojects.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/domprojects/ci-country-list/issues",
+        "source": "https://github.com/domprojects/ci-country-list"
+    },
+    "require": {
+        "php": "^7.4 || ^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "domprojects\\ci-country-list\\": "src/"
+        }
+    }
+}
