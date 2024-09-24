@@ -25,6 +25,11 @@ if (! function_exists('countryDropdown'))
      */
     function countryDropdown($name, $options = '', $select = '')
     {
+        if (! function_exists('form_dropdown'))
+        {
+            helper('form');
+        }
+
         $countryList = lang('Country.list');
         $selectValue = empty($select) ? 'null' : $select;
 
