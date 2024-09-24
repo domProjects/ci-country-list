@@ -33,6 +33,6 @@ if (! function_exists('countryDropdown'))
         $options = lang('Country.list');
         $selectedValue = empty($selected) ? 'null' : $selected;
 
-        return form_dropdown($name, ['' => lang('Country.selectCountry')] + $options, $selectValue, $extra);
+        return form_dropdown($name, ['' => lang('Country.selectCountry')] + $options, $selectedValue, $extra);
     }
 }
