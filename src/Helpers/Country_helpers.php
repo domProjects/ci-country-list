@@ -23,16 +23,16 @@ if (! function_exists('countryDropdown'))
     /*
      * https://codeigniter.com/user_guide/helpers/form_helper.html#form_dropdown
      */
-    function countryDropdown($name, $options = '', $select = '')
+    function countryDropdown($name, $extra = '', $selected = '')
     {
         if (! function_exists('form_dropdown'))
         {
             helper('form');
         }
 
-        $countryList = lang('Country.list');
-        $selectValue = empty($select) ? 'null' : $select;
+        $options = lang('Country.list');
+        $selectedValue = empty($selected) ? 'null' : $selected;
 
-        return form_dropdown($name, ['' => 'Select a country'] + $countryList, $selectValue, $options);
+        return form_dropdown($name, ['' => lang('Country.selectCountry')] + $options, $selectValue, $extra);
     }
 }

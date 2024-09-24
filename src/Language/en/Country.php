@@ -1,6 +1,7 @@
 <?php
 
 return [
+  'selectCountry' => 'Select a country',
   'list' => [
     'AF' => 'Afghanistan',
     'AX' => 'Åland Islands',
