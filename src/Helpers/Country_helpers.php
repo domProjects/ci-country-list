@@ -2,7 +2,10 @@
 
 if (! function_exists('countryIsoToName'))
 {
-    function countryIsoToName(string $iso)
+    /**
+     * @param string    $iso    code ISO
+     */
+    function countryIsoToName(string $iso): string
     {
         $isoTransform = strtoupper($iso);
         $countryList = lang('Country.list');
@@ -20,10 +23,14 @@ if (! function_exists('countryIsoToName'))
 
 if (! function_exists('countryDropdown'))
 {
-    /*
-     * https://codeigniter.com/user_guide/helpers/form_helper.html#form_dropdown
+    /**
+     * @source https://codeigniter.com/user_guide/helpers/form_helper.html#form_dropdown
+     *
+     * @param string        $name     Field name
+     * @param array|string  $extra    Extra attributes to be added to the tag either as an array or a literal string
+     * @param array|string  $selected List of fields to mark with the selected attribute
      */
-    function countryDropdown($name, $extra = '', $selected = '')
+    function countryDropdown(string $name, $extra = '', array $selected = []): string
     {
         if (! function_exists('form_dropdown'))
         {
