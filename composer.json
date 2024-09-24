@@ -19,14 +19,20 @@
     "require": {
         "php": "^7.4 || ^8.0"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "files": [
-            "Helpers/Country_helpers.php"
+            "src/Helpers/Country_helpers.php"
         ],
         "psr-4": {
-            "domprojects\\ci-country-list\\": "src/",
-            "domprojects\\ci-country-list\\Helpers\\": "src/helpers/"
+            "domprojects\\ci-country-list\\": "src/"
         }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
     },
     "scripts": {
         "post-install-cmd": [
