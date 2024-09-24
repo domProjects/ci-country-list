@@ -1,8 +1,8 @@
 <?php
 
-if (! function_exists('countryIsoCodeToName'))
+if (! function_exists('countryIsoToName'))
 {
-    function countryIsoCodeToName(string $iso, string $list = 'Country.list')
+    function countryIsoToName(string $iso, string $list = 'Country.list')
     {
         $isoTransform = strtoupper($iso);
         $countryList = lang($list);
