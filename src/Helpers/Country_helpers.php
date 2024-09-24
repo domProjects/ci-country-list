@@ -30,7 +30,7 @@ if (! function_exists('countryDropdown'))
      * @param array|string  $extra    Extra attributes to be added to the tag either as an array or a literal string
      * @param array|string  $selected List of fields to mark with the selected attribute
      */
-    function countryDropdown(string $name, $extra = '', array $selected = []): string
+    function countryDropdown(string $name, $extra = '', $selected = ''): string
     {
         if (! function_exists('form_dropdown'))
         {
