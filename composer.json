@@ -20,8 +20,19 @@
         "php": "^7.4 || ^8.0"
     },
     "autoload": {
+        "files": {
+            "Helpers/Country_helpers.php"
+        },
         "psr-4": {
             "domprojects\\ci-country-list\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": {
+            "Composer\\Script\\DumpAutoload::run"
+        },
+        "post-update-cmd": {
+            "Composer\\Script\\DumpAutoload::run"
         }
     }
 }
