@@ -25,7 +25,7 @@
         ],
         "psr-4": {
             "domprojects\\ci-country-list\\": "src/",
-            "domprojects\\ci-country-list\\Helpers": "src/helpers/"
+            "domprojects\\ci-country-list\\Helpers\\": "src/helpers/"
         }
     },
     "scripts": {
